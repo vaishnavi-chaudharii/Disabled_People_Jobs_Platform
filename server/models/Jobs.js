@@ -11,7 +11,7 @@ const JobsSchema = new mongoose.Schema({
     j_slug: {
         type: String,
     },
-    job_mode: { // WFH / Offline
+    j_mode: { // WFH / Offline
         type: String,
         required: [true, "Please Add a Job Mode"],
     },
@@ -83,3 +83,4 @@ const JobsSchema = new mongoose.Schema({
 })
 
 module.exports = mongoose.model('Job', JobsSchema)
+
